@@ -10,6 +10,9 @@ app.use('/api/authors', authorsRoutes);
 const postsRoutes = require('./src/routes/posts.routes');
 app.use('/api/posts', postsRoutes);
 
+const errorHandler = require('./src/midleware/errorHandler');
+app.use(errorHandler);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
