@@ -20,10 +20,10 @@ const create = async (body) => {
 };
 
 const update = async (id, body) => {
-  const { title, content, author_id, published } = body;
+  const { title, content, published } = body;
   const result = await pool.query(
-    'UPDATE posts SET title = $1, content = $2, author_id = $3, published = $4 WHERE id = $5 RETURNING *',
-    [title, content, author_id, published, id]
+    'UPDATE posts SET title = $1, content = $2, published = $3 WHERE id = $4 RETURNING *',
+    [title, content, published, id]
   );
   return result.rows[0];
 };
