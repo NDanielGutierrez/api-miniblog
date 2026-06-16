@@ -4,6 +4,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({ message: 'MiniBlog API corriendo' });
+});
+
 const authorsRoutes = require('./src/routes/author.routes');
 app.use('/api/authors', authorsRoutes);
 
@@ -18,5 +22,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
+
 
 module.exports = app;
