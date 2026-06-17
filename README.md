@@ -190,3 +190,5 @@ La IA funcionó como un par de programación que explica mientras resuelve, no c
 | Manejo de errores | Problema de doble respuesta en catch | Middleware global con códigos de error de PostgreSQL 23505 y 23503 | Se identificó el bug de `next(error)` + `res.status()` simultáneos y se corrigió |
 | Tests | Fallo por email duplicado en corridas sucesivas | Estrategia `afterEach` con DELETE del registro creado | Se evaluaron otras opciones (`Date.now()`, base de datos separada) antes de elegir |
 | Deploy | Configuración de Railway con PostgreSQL | Conexión mediante `DATABASE_URL` y referencia interna `${{Postgres.DATABASE_URL}}` | Se verificó que la variable conectara correctamente los dos servicios en Railway |
+
+Para mas informacion sobre los prompts usador, respuestas y que se uso se adjunta un link de drive con el word "documentacion promp" con las screen de los mismos , asi como los links a github y swagger
