@@ -126,6 +126,9 @@ https://api-miniblog-production-9339.up.railway.app/api
 
 ## Deploy en Railway
 
+URL publica https://api-miniblog-production-9339.up.railway.app/
+
+
 **1.** Crea una cuenta en https://railway.app y conecta tu GitHub
 
 **2.** Nuevo proyecto → **Deploy from GitHub repo** → selecciona `api-miniblog`
